@@ -15,7 +15,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: docker
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
@@ -25,6 +25,6 @@ jobs:
         cache: maven
         distribution: 'temurin'
     - name: Build with Mave
-      run: mvn -B clean package -DskipTests
+      run: mvnw.cmd -B clean package -DskipTests
         
         
