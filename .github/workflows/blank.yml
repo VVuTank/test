@@ -24,6 +24,6 @@ jobs:
         java-version: '17'
         distribution: 'microsoft'
     - name: Build with Mave
-      run: C:\abc\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin\mvn -B clean package -DskipTests
+      run: C:\abc\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin\mvn.cmd -B clean package -DskipTests
         
         
