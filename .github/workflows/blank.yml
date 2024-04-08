@@ -24,8 +24,6 @@ jobs:
         java-version: '8'
         cache: maven
         distribution: 'temurin'
-    - name: java version
-      run: java --version
     - name: Build with Mave
       run: C:\abc\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin\mvn.cmd -B clean package -DskipTests
         
