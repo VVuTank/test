@@ -27,5 +27,7 @@ jobs:
       run: C:\abc\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin\mvn.cmd -B clean package -DskipTests
     - name: copy art
       run: cp target/*.jar C:\abc\art
+    - name: docker build
+      run: docker build .
         
         
