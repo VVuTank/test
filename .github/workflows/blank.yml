@@ -27,9 +27,10 @@ jobs:
       run: C:\abc\apache-maven-3.9.6-bin\apache-maven-3.9.6\bin\mvn.cmd -B clean package -DskipTests
     - name: copy art
       run: cp target/*.jar C:\abc\art
-    - uses: docker/build-push-action@v5
-      with:
-        context: .
-        file: ./Dockerfile
+    - name: docker/build-push-action@v5
+      run: docker buil .
+     # with:
+        #context: .
+        #file: ./Dockerfile
         
         
