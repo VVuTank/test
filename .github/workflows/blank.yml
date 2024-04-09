@@ -28,7 +28,7 @@ jobs:
     - name: copy art
       run: cp target/*.jar C:\abc\art
     - name: docker/build-push-action@v5
-      run: docker buil .
+      run: docker build -t app:v1 .
      # with:
         #context: .
         #file: ./Dockerfile
